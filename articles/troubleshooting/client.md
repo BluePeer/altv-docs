@@ -212,16 +212,18 @@ If you have problems with the speech system, for example, if you change your inp
 Here you will find a few links that execute predefined actions on your alt:V launcher.\
 The detailed information about what was done can be found in the following list:
 
-| Link                                                      | Target                          | Description                                                         |
-|-----------------------------------------------------------|---------------------------------|---------------------------------------------------------------------|
-| [Open game directory](altv://action/open/game)            | `altv://action/open/game`       | Opens the game directory                                            |
-| [Open alt:V directory](altv://action/open/altv)           | `altv://action/open/altv`       | Opens the alt:V directory                                           |
-| [Open logs directory](altv://action/open/logs)            | `altv://action/open/logs`       | Opens the logs directory                                            |
-| [Open crashdump directory](altv://action/open/crashdumps) | `altv://action/open/crashdumps` | Opens the crashdumps directory                                      |
-| [Open mods directory](altv://action/open/mods)            | `altv://action/open/mods`       | Opens the mods directory                                            |
-| [Open configuration file](altv://action/open/config)      | `altv://action/open/config`     | Opens the altv.toml                                                 |
-| [Create report](altv://action/report)                     | `altv://action/report`          | Creates a report zip (containing log files) and saves it to desktop |
-| [Copy latest crashdump id](altv://action/crashdumpid)     | `altv://action/crashdumpid`     | Copies the latest crashdump id to clipboard                         |
+| Link                                                         | Target                               | Description                                                                  |
+|--------------------------------------------------------------|--------------------------------------|------------------------------------------------------------------------------|
+| [Open game directory](altv://action/open/game)               | `altv://action/open/game`            | Opens the game directory                                                     |
+| [Open alt:V directory](altv://action/open/altv)              | `altv://action/open/altv`            | Opens the alt:V directory                                                    |
+| [Open logs directory](altv://action/open/logs)               | `altv://action/open/logs`            | Opens the logs directory                                                     |
+| [Open crashdump directory](altv://action/open/crashdumps)    | `altv://action/open/crashdumps`      | Opens the crashdumps directory                                               |
+| [Open mods directory](altv://action/open/mods)               | `altv://action/open/mods`            | Opens the mods directory                                                     |
+| [Open configuration file](altv://action/open/config)         | `altv://action/open/config`          | Opens the altv.toml                                                          |
+| [Open Game Path Selection](altv://action/changegamepath)     | `altv://action/changegamepath`       | Opens the Installer to change the Selected Game Path Settings                |
+| [Create report](altv://action/report)                        | `altv://action/report`               | Creates a report zip (containing log files) and saves it to desktop          |
+| [Create Extended report](altv://action/report?extended=true) | `altv://action/report?extended=true` | Creates a Extended report zip (containing log files) and saves it to desktop |
+| [Copy latest crashdump id](altv://action/crashdumpid)        | `altv://action/crashdumpid`          | Copies the latest crashdump id to clipboard                                  |
 
 ### Configuration settings
 
@@ -239,12 +241,12 @@ The detailed information about what was done can be found in the following list:
 | [Enable](altv://action/setcfg?textureBudgetPatch=true)   | `altv://action/setcfg?textureBudgetPatch=true`  | Enables the texture budget patch  |
 | [Disable](altv://action/setcfg?textureBudgetPatch=false) | `altv://action/setcfg?textureBudgetPatch=false` | Disables the texture budget patch |
 
-#### useSharedTextures
+#### cefUseHardwareAcceleration (old useSharedTextures)
 
 | Link                                                    | Target                                         | Description                         |
 |---------------------------------------------------------|------------------------------------------------|-------------------------------------|
-| [Enable](altv://action/setcfg?useSharedTextures=true)   | `altv://action/setcfg?useSharedTextures=true`  | Enables the use of shared textures  |
-| [Disable](altv://action/setcfg?useSharedTextures=false) | `altv://action/setcfg?useSharedTextures=false` | Disables the use of shared textures |
+| [Enable](altv://action/setcfg?cefUseHardwareAcceleration=true)   | `altv://action/setcfg?cefUseHardwareAcceleration=true`  | Enables the use of shared textures / CEF Hardware Acceleration  |
+| [Disable](altv://action/setcfg?cefUseHardwareAcceleration=false) | `altv://action/setcfg?cefUseHardwareAcceleration=false` | Disables the use of shared textures / CEF Hardware Acceleration |
 
 #### enableDiscordOverlay
 
